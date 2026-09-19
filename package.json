@@ -1,0 +1,15 @@
+{
+    "name": "fcc-consumer-complaint-tracker",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Search FCC consumer complaints about phone, TV, and internet service by state, issue type, and date, from the FCC's official open data feed.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}

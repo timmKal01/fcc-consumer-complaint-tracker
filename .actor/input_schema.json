@@ -1,0 +1,40 @@
+{
+    "title": "FCC Consumer Complaint Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "state": {
+            "title": "State",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Two-letter US state code, e.g. \"CA\". Leave blank for all states."
+        },
+        "issueType": {
+            "title": "Issue type",
+            "type": "string",
+            "editor": "select",
+            "description": "Filter by complaint category. Leave blank for all types.",
+            "enum": ["", "Phone", "TV", "Internet", "Radio", "Accessibility", "Emergency", "Broadband Story", "Request for Dispute Assistance"],
+            "enumTitles": ["All types", "Phone", "TV", "Internet", "Radio", "Accessibility", "Emergency", "Broadband Story", "Request for Dispute Assistance"],
+            "default": ""
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search for complaints.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 1825
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of complaint records to return, most recent first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 1000
+        }
+    }
+}
