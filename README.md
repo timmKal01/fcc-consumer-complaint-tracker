@@ -52,6 +52,10 @@ A direct call to the FCC's own open data endpoint (Socrata), no scraping, no key
 
 Retries with exponential backoff on transient failures, the same defensive fetch pattern used across every actor in this portfolio.
 
+## Pricing note
+
+Billed per **search**, not per complaint returned, one charge whether the search returns 1 complaint or up to the requested max.
+
 ## Related products
 
 - [Vehicle Complaint Tracker](https://github.com/timmKal01/vehicle-complaint-tracker): the same raw-consumer-complaint pattern applied to NHTSA vehicle data instead of telecom
