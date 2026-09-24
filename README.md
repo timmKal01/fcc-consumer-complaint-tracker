@@ -1,5 +1,9 @@
 # FCC Consumer Complaint Tracker: Telecom & Robocall Data
 
+Search consumer complaints about phone, TV, internet, and radio service, including robocalls and billing disputes, straight from the FCC's official open data feed. Filter by state, issue type, and how far back to look, and get the most recent complaints first.
+
+Here's a real record it returns:
+
 ```json
 {
   "complaintId": "9126420",
@@ -15,8 +19,6 @@
   "location": [-122.08032, 37.37879]
 }
 ```
-
-That's a real record from today. Give it a state, issue type, and/or lookback window, get back consumer complaints about phone, TV, internet, and radio service straight from the FCC's own open data feed, most recent first.
 
 ## Who this is for
 

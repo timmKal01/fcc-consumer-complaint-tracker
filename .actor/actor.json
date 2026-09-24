@@ -1,7 +1,7 @@
 {
     "actorSpecification": 1,
     "name": "fcc-consumer-complaint-tracker",
-    "title": "FCC Consumer Complaint Tracker: Telecom & Robocall Data",
+    "title": "FCC Complaint Tracker: Robocalls, Phone & TV",
     "description": "Search FCC consumer complaints about phone, TV, and internet service by state, issue type, and date, straight from the FCC's official open data feed. For telecom carrier compliance teams, robocall researchers, and journalists tracking complaint trends.",
     "version": "0.1",
     "meta": {
