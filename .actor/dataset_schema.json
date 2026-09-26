@@ -1,0 +1,73 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "complaintId",
+                    "ticketCreated",
+                    "issueType",
+                    "issue",
+                    "method",
+                    "callerIdNumber",
+                    "advertiserPhoneNumber",
+                    "city",
+                    "state",
+                    "zip",
+                    "location"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "complaintId": {
+                        "label": "Complaint ID",
+                        "format": "text"
+                    },
+                    "ticketCreated": {
+                        "label": "Ticket created",
+                        "format": "date"
+                    },
+                    "issueType": {
+                        "label": "Issue type",
+                        "format": "text"
+                    },
+                    "issue": {
+                        "label": "Issue",
+                        "format": "text"
+                    },
+                    "method": {
+                        "label": "Method",
+                        "format": "text"
+                    },
+                    "callerIdNumber": {
+                        "label": "Caller ID number",
+                        "format": "text"
+                    },
+                    "advertiserPhoneNumber": {
+                        "label": "Advertiser phone number",
+                        "format": "text"
+                    },
+                    "city": {
+                        "label": "City",
+                        "format": "text"
+                    },
+                    "state": {
+                        "label": "State",
+                        "format": "text"
+                    },
+                    "zip": {
+                        "label": "Zip",
+                        "format": "text"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "array"
+                    }
+                }
+            }
+        }
+    }
+}
