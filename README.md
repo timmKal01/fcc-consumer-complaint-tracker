@@ -60,5 +60,5 @@ Billed per **search**, not per complaint returned, one charge whether the search
 
 ## Related products
 
-- [Vehicle Complaint Tracker](https://github.com/timmKal01/vehicle-complaint-tracker): the same raw-consumer-complaint pattern applied to NHTSA vehicle data instead of telecom
-- [Consumer Complaint Tracker](https://github.com/timmKal01/consumer-complaint-tracker): CFPB financial-services complaints, for banking and lending instead of telecom
+- [Vehicle Complaint Lookup](https://apify.com/m_ctim/vehicle-complaint-tracker): the same raw-consumer-complaint pattern applied to NHTSA vehicle data instead of telecom
+- [CFPB Complaint Tracker](https://apify.com/m_ctim/consumer-complaint-tracker): CFPB financial-services complaints, for banking and lending instead of telecom
