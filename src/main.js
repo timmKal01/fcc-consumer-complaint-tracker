@@ -1,5 +1,9 @@
 import { Actor, log } from 'apify';
 
+// Some public APIs refuse requests that identify themselves only as Node's default "node" user agent (data.cms.gov
+// started doing so in October 2026), so every request says which tool is asking and where to find it.
+const USER_AGENT = 'fcc-consumer-complaint-tracker/0.1 (+https://apify.com/m_ctim/fcc-consumer-complaint-tracker)';
+
 await Actor.init();
 
 const input = (await Actor.getInput()) ?? {};
@@ -25,7 +29,7 @@ async function fetchWithRetry(url) {
         const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
         let res;
         try {
-            res = await fetch(url, { signal: controller.signal });
+            res = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: controller.signal });
         } catch (err) {
             lastError = err.name === 'AbortError' ? new Error(`Request timed out after ${REQUEST_TIMEOUT_MS}ms: ${url}`) : err;
             if (attempt < MAX_ATTEMPTS) {
